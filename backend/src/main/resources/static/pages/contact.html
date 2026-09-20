@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — SPORTX</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/assets/categories/cricket.svg">
+</head>
+<body>
+<div id="sxHeader"></div>
+
+<div class="sx-container sx-section">
+  <nav class="sx-breadcrumb"><a href="/">Home</a> / Contact</nav>
+  <h1 style="font-size:1.8rem">Contact us</h1>
+  <p class="sx-muted">Questions about an order, a product or a return — send a message and
+     we reply within 24 hours.</p>
+
+  <div class="sx-cart-layout" style="margin-top:1.5rem">
+    <form class="sx-panel" id="contactForm" novalidate>
+      <div class="sx-form-row">
+        <div class="sx-field"><label for="cName">Your name</label>
+          <input id="cName" name="name" required><div class="sx-field-error"></div></div>
+        <div class="sx-field"><label for="cEmail">Email</label>
+          <input id="cEmail" name="email" type="email" required><div class="sx-field-error"></div></div>
+      </div>
+      <div class="sx-field"><label for="cSubject">Subject</label>
+        <input id="cSubject" name="subject" placeholder="Order #12 has not arrived"></div>
+      <div class="sx-field"><label for="cMessage">Message</label>
+        <textarea id="cMessage" name="message" required></textarea>
+        <div class="sx-field-error"></div></div>
+      <button class="sx-btn sx-btn-primary" type="submit">Send message</button>
+    </form>
+
+    <aside class="sx-panel">
+      <h3>Store details</h3>
+      <table class="sx-specs">
+        <tr><td>Address</td><td>SPORTX Sports Store, Station Road, Bharuch, Gujarat 392001</td></tr>
+        <tr><td>Phone</td><td>+91 98765 43210</td></tr>
+        <tr><td>Email</td><td>support@sportx.com</td></tr>
+        <tr><td>Hours</td><td>Mon–Sat, 10:00–20:00 IST</td></tr>
+      </table>
+      <p class="sx-small sx-muted" style="margin-top:1rem">For order issues, include your order
+        number so we can look it up straight away.</p>
+    </aside>
+  </div>
+</div>
+<div id="sxFooter"></div>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/contact.js"></script>
+</body>
+</html>

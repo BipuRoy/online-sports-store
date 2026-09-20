@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About us — SPORTX</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/assets/categories/cricket.svg">
+</head>
+<body>
+<div id="sxHeader"></div>
+
+<div class="sx-hero"><div class="sx-container"><div class="sx-hero-inner">
+  <div><span class="sx-hero-eyebrow">About SPORTX</span>
+    <h1 style="font-size:2.4rem">Built by players, for players</h1>
+    <p>SPORTX started as a single counter stocking cricket bats and grew into an
+       online store covering seven sports, run on the principle that good equipment
+       should be easy to find and honestly described.</p></div>
+  <div class="sx-hero-art">
+    <img src="/assets/categories/cricket.svg" alt="Cricket"><img src="/assets/categories/football.svg" alt="Football">
+    <img src="/assets/categories/fitness.svg" alt="Fitness"><img src="/assets/categories/tennis.svg" alt="Tennis">
+  </div>
+</div></div></div>
+
+<div class="sx-container sx-section">
+  <div class="sx-grid sx-grid-3">
+    <div class="sx-panel"><h3>What we stock</h3>
+      <p class="sx-muted">Cricket, football, badminton, basketball, fitness, running and tennis —
+        from entry-level kit to equipment club players use every week.</p></div>
+    <div class="sx-panel"><h3>How we describe it</h3>
+      <p class="sx-muted">Every listing carries real specifications: weight, material, size and
+        fit. If something runs small, the description says so.</p></div>
+    <div class="sx-panel"><h3>Delivery and returns</h3>
+      <p class="sx-muted">Free shipping over ₹999, cash on delivery across India, and a
+        seven-day return window on unused items in original packaging.</p></div>
+  </div>
+
+  <div class="sx-panel" style="margin-top:2rem">
+    <h2>About this project</h2>
+    <p class="sx-muted">SPORTX is a full-stack web application built as a B.Tech Computer Science
+      and Engineering project. The frontend is HTML5, CSS3 and vanilla JavaScript; the backend is
+      Java Spring Boot exposing a REST API secured with JSON Web Tokens; data is stored in MySQL
+      through Spring Data JPA. It demonstrates authentication, role-based authorisation, catalogue
+      management, cart and stock handling, order processing and an admin dashboard.</p>
+    <a class="sx-btn sx-btn-primary" href="/shop">Browse the store</a>
+  </div>
+</div>
+<div id="sxFooter"></div>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script>document.addEventListener("DOMContentLoaded",()=>UI.mount("About Us"));</script>
+</body>
+</html>

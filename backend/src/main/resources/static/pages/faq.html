@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ — SPORTX</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/assets/categories/cricket.svg">
+</head>
+<body>
+<div id="sxHeader"></div>
+
+<div class="sx-container sx-section" style="max-width:800px">
+  <nav class="sx-breadcrumb"><a href="/">Home</a> / FAQ</nav>
+  <h1 style="font-size:1.8rem">Frequently asked questions</h1>
+  <p class="sx-muted">The things customers ask most often.</p>
+
+  <div style="margin-top:1.5rem">
+    <details class="sx-accordion" open><summary>How long does delivery take?</summary>
+      <p>Orders placed before 2 PM ship the same working day. Metro cities usually receive
+         their parcel in 2–3 days; other locations take 4–6 days.</p></details>
+    <details class="sx-accordion"><summary>Is cash on delivery available?</summary>
+      <p>Yes, on every order across India. You can also pay online at checkout — in this
+         project the online option uses a mock gateway, so no real payment is taken.</p></details>
+    <details class="sx-accordion"><summary>What is the return policy?</summary>
+      <p>Unused items in original packaging can be returned within seven days of delivery.
+         Personalised items and opened nutrition products are excluded.</p></details>
+    <details class="sx-accordion"><summary>How do coupons work?</summary>
+      <p>Enter the code on the cart page. The discount applies to the subtotal after any
+         product-level discount, provided your cart meets the minimum order value.</p></details>
+    <details class="sx-accordion"><summary>When is delivery free?</summary>
+      <p>Shipping is free once the payable amount reaches ₹999. Below that a flat ₹49
+         delivery charge applies.</p></details>
+    <details class="sx-accordion"><summary>Can I cancel an order?</summary>
+      <p>Yes, from your account page at any time before the order ships. Cancelling returns
+         the items to stock automatically.</p></details>
+    <details class="sx-accordion"><summary>How do I know my size?</summary>
+      <p>Shoe sizes follow standard UK sizing and apparel follows Indian sizing. Each product
+         page lists the sizes in stock; if a size is missing, it has sold out.</p></details>
+    <details class="sx-accordion"><summary>Are my card details safe?</summary>
+      <p>Passwords are stored as BCrypt hashes and the API is protected with JSON Web Tokens.
+         The payment screen in this project is a demonstration and never collects real card data.</p></details>
+  </div>
+</div>
+<div id="sxFooter"></div>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script>document.addEventListener("DOMContentLoaded",()=>UI.mount(""));</script>
+</body>
+</html>

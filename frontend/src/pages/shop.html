@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop — SPORTX</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/assets/categories/cricket.svg">
+</head>
+<body>
+<div id="sxHeader"></div>
+
+<div class="sx-container">
+  <nav class="sx-breadcrumb"><a href="/">Home</a> / <span id="crumb">All products</span></nav>
+
+  <div class="sx-shop">
+    <aside class="sx-panel sx-filters">
+      <h3 style="margin-bottom:.2rem">Filters</h3>
+      <button class="sx-btn sx-btn-ghost sx-btn-sm" id="clearFilters" style="margin-bottom:.5rem">Clear all</button>
+
+      <div class="sx-filter-group">
+        <h4>Category</h4>
+        <div id="categoryFilters"><div class="sx-spinner"></div></div>
+      </div>
+
+      <div class="sx-filter-group">
+        <h4>Price range</h4>
+        <div class="sx-form-row">
+          <div class="sx-field" style="margin-bottom:.5rem">
+            <label for="minPrice">Min ₹</label>
+            <input type="number" id="minPrice" min="0" placeholder="0">
+          </div>
+          <div class="sx-field" style="margin-bottom:.5rem">
+            <label for="maxPrice">Max ₹</label>
+            <input type="number" id="maxPrice" min="0" placeholder="10000">
+          </div>
+        </div>
+        <button class="sx-btn sx-btn-dark sx-btn-sm sx-btn-block" id="applyPrice">Apply price</button>
+      </div>
+
+      <div class="sx-filter-group">
+        <h4>Customer rating</h4>
+        <label class="sx-check"><input type="radio" name="rating" value=""> Any rating</label>
+        <label class="sx-check"><input type="radio" name="rating" value="4"> 4★ and above</label>
+        <label class="sx-check"><input type="radio" name="rating" value="3"> 3★ and above</label>
+      </div>
+    </aside>
+
+    <section>
+      <div class="sx-toolbar">
+        <div>
+          <h2 style="margin:0" id="resultsTitle">All products</h2>
+          <span class="sx-muted sx-small" id="resultsCount">Loading…</span>
+        </div>
+        <label class="sx-small sx-muted">Sort by
+          <select id="sortSelect">
+            <option value="newest">Newest first</option>
+            <option value="priceAsc">Price: low to high</option>
+            <option value="priceDesc">Price: high to low</option>
+            <option value="rating">Customer rating</option>
+            <option value="name">Name A–Z</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="sx-grid sx-grid-4" id="productGrid"></div>
+      <div class="sx-pagination" id="pagination"></div>
+    </section>
+  </div>
+</div>
+<div id="sxFooter"></div>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/shop.js"></script>
+</body>
+</html>

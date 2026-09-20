@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320" role="img" aria-label="Tennis Ball Pack">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A9E34B"/>
+      <stop offset="100%" stop-color="#0B1B33"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="320" fill="url(#g)"/>
+  <circle cx="330" cy="46" r="92" fill="#FFFFFF" opacity=".07"/>
+  <circle cx="58" cy="286" r="70" fill="#FFFFFF" opacity=".06"/>
+  <circle cx="200" cy="160" r="72" fill="#FFFFFF" opacity=".92"/><path d="M200 88 A72 72 0 0 1 200 232" stroke="#A9E34B" stroke-width="5" fill="none" stroke-dasharray="10 9"/>
+  <text x="200" y="294" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="600"
+        fill="#FFFFFF" text-anchor="middle" opacity=".95">Tennis Ball Pack</text>
+</svg>

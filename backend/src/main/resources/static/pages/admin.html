@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin panel — SPORTX</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/assets/categories/cricket.svg">
+</head>
+<body>
+<div id="sxHeader"></div>
+
+<div class="sx-container sx-section">
+  <h1 style="font-size:1.8rem">Admin panel</h1>
+  <p class="sx-muted">Manage the catalogue, orders and customers.</p>
+
+  <div class="sx-dash" style="margin-top:1.25rem">
+    <nav class="sx-side-nav" id="adminNav">
+      <button data-tab="stats" class="active">📊 Dashboard</button>
+      <button data-tab="products">📦 Products</button>
+      <button data-tab="categories">🏷 Categories</button>
+      <button data-tab="orders">🧾 Orders</button>
+      <button data-tab="users">👥 Users</button>
+      <button data-tab="coupons">🎟 Coupons</button>
+    </nav>
+
+    <div>
+      <section class="sx-tabpane active" id="tab-stats">
+        <div class="sx-grid sx-grid-4" id="statsGrid"><div class="sx-spinner"></div></div>
+      </section>
+
+      <section class="sx-tabpane" id="tab-products">
+        <div class="sx-panel">
+          <div class="sx-toolbar">
+            <h3 style="margin:0">Products</h3>
+            <button class="sx-btn sx-btn-primary sx-btn-sm" id="newProduct">+ Add product</button>
+          </div>
+          <div class="sx-table-wrap"><table class="sx-table">
+            <thead><tr><th>ID</th><th>Product</th><th>Category</th><th>Brand</th>
+              <th>Price</th><th>Disc</th><th>Stock</th><th>Rating</th><th></th></tr></thead>
+            <tbody id="productRows"><tr><td colspan="9"><div class="sx-spinner"></div></td></tr></tbody>
+          </table></div>
+        </div>
+      </section>
+
+      <section class="sx-tabpane" id="tab-categories">
+        <div class="sx-panel">
+          <div class="sx-toolbar">
+            <h3 style="margin:0">Categories</h3>
+            <button class="sx-btn sx-btn-primary sx-btn-sm" id="newCategory">+ Add category</button>
+          </div>
+          <div class="sx-table-wrap"><table class="sx-table">
+            <thead><tr><th>ID</th><th>Name</th><th>Description</th><th></th></tr></thead>
+            <tbody id="categoryRows"></tbody>
+          </table></div>
+        </div>
+      </section>
+
+      <section class="sx-tabpane" id="tab-orders">
+        <div class="sx-panel">
+          <div class="sx-toolbar">
+            <h3 style="margin:0">Orders</h3>
+            <label class="sx-small sx-muted">Filter
+              <select id="orderFilter">
+                <option value="">All statuses</option>
+                <option>PENDING</option><option>CONFIRMED</option><option>PACKED</option>
+                <option>SHIPPED</option><option>DELIVERED</option><option>CANCELLED</option>
+              </select></label>
+          </div>
+          <div class="sx-table-wrap"><table class="sx-table">
+            <thead><tr><th>Order</th><th>Customer</th><th>Date</th><th>Items</th>
+              <th>Total</th><th>Payment</th><th>Status</th><th></th></tr></thead>
+            <tbody id="orderRows"></tbody>
+          </table></div>
+        </div>
+      </section>
+
+      <section class="sx-tabpane" id="tab-users">
+        <div class="sx-panel">
+          <h3>Users</h3>
+          <div class="sx-table-wrap"><table class="sx-table">
+            <thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Phone</th>
+              <th>Role</th><th>Joined</th><th>Status</th><th></th></tr></thead>
+            <tbody id="userRows"></tbody>
+          </table></div>
+        </div>
+      </section>
+
+      <section class="sx-tabpane" id="tab-coupons">
+        <div class="sx-panel">
+          <div class="sx-toolbar"><h3 style="margin:0">Coupons</h3>
+            <button class="sx-btn sx-btn-primary sx-btn-sm" id="newCoupon">+ Add coupon</button></div>
+          <div class="sx-table-wrap"><table class="sx-table">
+            <thead><tr><th>Code</th><th>Discount</th><th>Min order</th>
+              <th>Expires</th><th>Status</th><th></th></tr></thead>
+            <tbody id="couponRows"></tbody>
+          </table></div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="sx-modal-backdrop" id="adminModal">
+  <div class="sx-modal" role="dialog" aria-modal="true" aria-labelledby="adminModalTitle">
+    <div class="sx-modal-head"><h3 id="adminModalTitle">Edit</h3>
+      <button class="sx-x" data-close aria-label="Close">×</button></div>
+    <div class="sx-modal-body" id="adminModalBody"></div>
+    <div class="sx-modal-foot">
+      <button class="sx-btn sx-btn-ghost" data-close>Cancel</button>
+      <button class="sx-btn sx-btn-primary" id="adminModalSave">Save</button>
+    </div>
+  </div>
+</div>
+<div id="sxFooter"></div>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/admin.js"></script>
+</body>
+</html>

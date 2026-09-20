@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My account — SPORTX</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/assets/categories/cricket.svg">
+</head>
+<body>
+<div id="sxHeader"></div>
+
+<div class="sx-container sx-section">
+  <nav class="sx-breadcrumb"><a href="/">Home</a> / My account</nav>
+  <h1 style="font-size:1.8rem" id="greeting">My account</h1>
+
+  <div class="sx-dash" style="margin-top:1.25rem">
+    <nav class="sx-side-nav" id="dashNav">
+      <button data-tab="profile" class="active">👤 Profile</button>
+      <button data-tab="orders">📦 My orders</button>
+      <button data-tab="wishlist">♡ Wishlist</button>
+      <button data-tab="cart">🛒 Cart</button>
+      <button data-tab="address">📍 Saved address</button>
+      <button data-tab="password">🔒 Password</button>
+      <button id="dashLogout">↩ Sign out</button>
+    </nav>
+
+    <div>
+      <section class="sx-tabpane active" id="tab-profile">
+        <div class="sx-panel">
+          <h3>Profile</h3>
+          <form id="profileForm" novalidate>
+            <div class="sx-form-row">
+              <div class="sx-field"><label for="pName">Full name</label>
+                <input id="pName" name="name" required><div class="sx-field-error"></div></div>
+              <div class="sx-field"><label for="pEmail">Email</label>
+                <input id="pEmail" disabled></div>
+            </div>
+            <div class="sx-field"><label for="pPhone">Phone number</label>
+              <input id="pPhone" name="phone" maxlength="10"><div class="sx-field-error"></div></div>
+            <button class="sx-btn sx-btn-primary" type="submit">Save changes</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="sx-tabpane" id="tab-orders">
+        <div class="sx-panel"><h3>My orders</h3><div id="ordersRoot"><div class="sx-spinner"></div></div></div>
+      </section>
+
+      <section class="sx-tabpane" id="tab-wishlist">
+        <div class="sx-panel"><h3>Wishlist</h3><div id="dashWishlist"></div></div>
+      </section>
+
+      <section class="sx-tabpane" id="tab-cart">
+        <div class="sx-panel"><h3>Cart</h3><div id="dashCart"></div></div>
+      </section>
+
+      <section class="sx-tabpane" id="tab-address">
+        <div class="sx-panel">
+          <h3>Saved address</h3>
+          <p class="sx-muted sx-small">Used to pre-fill the checkout form.</p>
+          <form id="addressForm">
+            <div class="sx-field"><label for="pAddress">Address</label>
+              <textarea id="pAddress" name="address"
+                placeholder="House / street, city, state, country, PIN"></textarea></div>
+            <button class="sx-btn sx-btn-primary" type="submit">Save address</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="sx-tabpane" id="tab-password">
+        <div class="sx-panel">
+          <h3>Change password</h3>
+          <form id="passwordForm" novalidate>
+            <div class="sx-field"><label for="currentPassword">Current password</label>
+              <input id="currentPassword" type="password" required></div>
+            <div class="sx-field"><label for="newPassword">New password</label>
+              <input id="newPassword" type="password" required>
+              <div class="sx-field-error"></div></div>
+            <button class="sx-btn sx-btn-primary" type="submit">Update password</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="sx-modal-backdrop" id="orderModal">
+  <div class="sx-modal" role="dialog" aria-modal="true" aria-labelledby="orderModalTitle">
+    <div class="sx-modal-head"><h3 id="orderModalTitle">Order details</h3>
+      <button class="sx-x" data-close aria-label="Close">×</button></div>
+    <div class="sx-modal-body" id="orderModalBody"></div>
+    <div class="sx-modal-foot"><button class="sx-btn sx-btn-ghost" data-close>Close</button></div>
+  </div>
+</div>
+<div id="sxFooter"></div>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

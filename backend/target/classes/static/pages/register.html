@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create account — SPORTX</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/assets/categories/cricket.svg">
+</head>
+<body>
+<div id="sxHeader"></div>
+
+<div class="sx-container sx-section" style="max-width:520px">
+  <div class="sx-panel">
+    <h1 style="font-size:1.5rem">Create your account</h1>
+    <p class="sx-muted sx-small">It takes about a minute and lets you track every order.</p>
+
+    <form id="registerForm" novalidate>
+      <div class="sx-field"><label for="name">Full name</label>
+        <input id="name" name="name" autocomplete="name" required>
+        <div class="sx-field-error"></div></div>
+      <div class="sx-field"><label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <div class="sx-field-error"></div></div>
+      <div class="sx-field"><label for="phone">Phone number</label>
+        <input id="phone" name="phone" inputmode="numeric" maxlength="10" required>
+        <div class="sx-field-error"></div></div>
+      <div class="sx-form-row">
+        <div class="sx-field"><label for="password">Password</label>
+          <input id="password" name="password" type="password" autocomplete="new-password" required>
+          <div class="sx-field-error"></div></div>
+        <div class="sx-field"><label for="confirmPassword">Confirm password</label>
+          <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" required>
+          <div class="sx-field-error"></div></div>
+      </div>
+      <p class="sx-small sx-muted">Use at least 6 characters. Passwords are stored as BCrypt hashes.</p>
+      <button class="sx-btn sx-btn-primary sx-btn-block" type="submit" id="registerBtn">Create account</button>
+    </form>
+
+    <p class="sx-center sx-small sx-muted" style="margin-top:1rem">Already registered?
+      <a href="/login" style="color:var(--accent);font-weight:600">Sign in</a></p>
+  </div>
+</div>
+<div id="sxFooter"></div>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/auth.js"></script>
+</body>
+</html>

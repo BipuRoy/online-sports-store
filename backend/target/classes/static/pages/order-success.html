@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order placed — SPORTX</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/assets/categories/cricket.svg">
+</head>
+<body>
+<div id="sxHeader"></div>
+
+<div class="sx-container sx-section" style="max-width:640px">
+  <div class="sx-steps">
+    <div class="sx-step done"><b>✓</b> Cart</div>
+    <div class="sx-step done"><b>✓</b> Checkout</div>
+    <div class="sx-step current"><b>3</b> Confirmation</div>
+  </div>
+  <div class="sx-panel sx-center">
+    <div style="font-size:3rem">✅</div>
+    <h1 style="font-size:1.6rem">Order placed</h1>
+    <p class="sx-muted">We have your order and will email updates as it moves.</p>
+    <div id="successDetails"><div class="sx-spinner"></div></div>
+    <div style="display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem">
+      <a class="sx-btn sx-btn-primary" href="/dashboard">Track your order</a>
+      <a class="sx-btn sx-btn-outline" href="/shop">Keep shopping</a>
+    </div>
+  </div>
+</div>
+<div id="sxFooter"></div>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/order-success.js"></script>
+</body>
+</html>

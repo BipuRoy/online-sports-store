@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in — SPORTX</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/assets/categories/cricket.svg">
+</head>
+<body>
+<div id="sxHeader"></div>
+
+<div class="sx-container sx-section" style="max-width:460px">
+  <div class="sx-panel">
+    <h1 style="font-size:1.5rem">Welcome back</h1>
+    <p class="sx-muted sx-small">Sign in to see your cart, wishlist and orders.</p>
+
+    <form id="loginForm" novalidate>
+      <div class="sx-field"><label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <div class="sx-field-error"></div></div>
+      <div class="sx-field"><label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+        <div class="sx-field-error"></div></div>
+      <button class="sx-btn sx-btn-primary sx-btn-block" type="submit" id="loginBtn">Sign in</button>
+    </form>
+
+    <p class="sx-center sx-small" style="margin-top:1rem">
+      <a href="#" id="forgotLink" style="color:var(--accent)">Forgot your password?</a></p>
+    <p class="sx-center sx-small sx-muted">New to SPORTX?
+      <a href="/register" style="color:var(--accent);font-weight:600">Create an account</a></p>
+
+    <div class="sx-panel sx-panel-tight" style="background:var(--canvas);margin-top:1.2rem">
+      <strong class="sx-small">Demo accounts for testing</strong>
+      <table class="sx-specs" style="font-size:.82rem">
+        <tr><td>Admin</td><td>admin@sportx.com / admin123</td></tr>
+        <tr><td>Customer</td><td>customer@sportx.com / customer123</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="sx-modal-backdrop" id="forgotModal">
+  <div class="sx-modal" role="dialog" aria-modal="true" aria-labelledby="forgotTitle">
+    <div class="sx-modal-head"><h3 id="forgotTitle">Reset your password</h3>
+      <button class="sx-x" data-close aria-label="Close">×</button></div>
+    <div class="sx-modal-body">
+      <p class="sx-muted sx-small">Enter your email and we will send a reset link.
+        In this project the email step is simulated.</p>
+      <div class="sx-field"><label for="forgotEmail">Email</label>
+        <input id="forgotEmail" type="email" placeholder="you@example.com"></div>
+    </div>
+    <div class="sx-modal-foot">
+      <button class="sx-btn sx-btn-ghost" data-close>Cancel</button>
+      <button class="sx-btn sx-btn-primary" id="sendReset">Send reset link</button>
+    </div>
+  </div>
+</div>
+<div id="sxFooter"></div>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/auth.js"></script>
+</body>
+</html>

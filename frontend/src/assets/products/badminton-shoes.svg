@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320" role="img" aria-label="Badminton Shoes">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0C8599"/>
+      <stop offset="100%" stop-color="#0B1B33"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="320" fill="url(#g)"/>
+  <circle cx="330" cy="46" r="92" fill="#FFFFFF" opacity=".07"/>
+  <circle cx="58" cy="286" r="70" fill="#FFFFFF" opacity=".06"/>
+  <path d="M116 216 v-34 l52-44 26 22 h50 a46 46 0 0 1 46 40 v16z" fill="#FFFFFF" opacity=".92"/><rect x="116" y="216" width="174" height="18" rx="9" fill="#FFFFFF" opacity=".7"/>
+  <text x="200" y="294" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="600"
+        fill="#FFFFFF" text-anchor="middle" opacity=".95">Badminton Shoes</text>
+</svg>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — SPORTX</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/assets/categories/cricket.svg">
+</head>
+<body>
+<div id="sxHeader"></div>
+
+<div class="sx-container sx-section">
+  <nav class="sx-breadcrumb"><a href="/">Home</a> / <a href="/cart">Cart</a> / Checkout</nav>
+  <h1 style="font-size:1.8rem">Checkout</h1>
+
+  <div class="sx-steps">
+    <div class="sx-step done"><b>✓</b> Cart</div>
+    <div class="sx-step current"><b>2</b> Checkout</div>
+    <div class="sx-step"><b>3</b> Confirmation</div>
+  </div>
+
+  <div class="sx-cart-layout">
+    <form class="sx-panel" id="checkoutForm" novalidate>
+      <h3>Delivery details</h3>
+      <div class="sx-form-row">
+        <div class="sx-field"><label for="fullName">Full name</label>
+          <input id="fullName" name="fullName" autocomplete="name" required>
+          <div class="sx-field-error"></div></div>
+        <div class="sx-field"><label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <div class="sx-field-error"></div></div>
+      </div>
+      <div class="sx-form-row">
+        <div class="sx-field"><label for="phone">Phone number</label>
+          <input id="phone" name="phone" inputmode="numeric" maxlength="10" required>
+          <div class="sx-field-error"></div></div>
+        <div class="sx-field"><label for="pincode">PIN / ZIP code</label>
+          <input id="pincode" name="pincode" inputmode="numeric" maxlength="10" required>
+          <div class="sx-field-error"></div></div>
+      </div>
+      <div class="sx-field"><label for="address">Address</label>
+        <input id="address" name="address" autocomplete="street-address" required>
+        <div class="sx-field-error"></div></div>
+      <div class="sx-form-row">
+        <div class="sx-field"><label for="city">City</label>
+          <input id="city" name="city" required><div class="sx-field-error"></div></div>
+        <div class="sx-field"><label for="state">State</label>
+          <input id="state" name="state" required><div class="sx-field-error"></div></div>
+      </div>
+      <div class="sx-field"><label for="country">Country</label>
+        <input id="country" name="country" value="India" required><div class="sx-field-error"></div></div>
+
+      <h3 style="margin-top:1.5rem">Payment method</h3>
+      <label class="sx-pay-option active" data-pay="COD">
+        <input type="radio" name="paymentMethod" value="COD" checked>
+        <span><strong>Cash on delivery</strong><br>
+          <span class="sx-muted sx-small">Pay the courier when your order arrives.</span></span>
+      </label>
+      <label class="sx-pay-option" data-pay="ONLINE">
+        <input type="radio" name="paymentMethod" value="ONLINE">
+        <span><strong>Online payment</strong><br>
+          <span class="sx-muted sx-small">Card, UPI or net banking. This project uses a mock
+          gateway, so no real money moves.</span></span>
+      </label>
+
+      <div id="mockGateway" class="sx-panel sx-panel-tight" hidden
+           style="background:var(--canvas);margin-top:.5rem">
+        <div class="sx-form-row">
+          <div class="sx-field"><label for="cardNumber">Card number</label>
+            <input id="cardNumber" placeholder="4111 1111 1111 1111"></div>
+          <div class="sx-field"><label for="cardExpiry">Expiry</label>
+            <input id="cardExpiry" placeholder="12/29"></div>
+        </div>
+        <p class="sx-small sx-muted" style="margin:0">Demo gateway — any values are accepted
+          and the payment is marked as captured.</p>
+      </div>
+    </form>
+
+    <aside class="sx-panel sx-summary">
+      <h3>Order summary</h3>
+      <div id="summaryItems"><div class="sx-spinner"></div></div>
+      <div id="summaryTotals"></div>
+      <button class="sx-btn sx-btn-primary sx-btn-block" id="placeOrder" style="margin-top:1rem">
+        Place order</button>
+      <p class="sx-small sx-muted sx-center" style="margin:.7rem 0 0">
+        Stock is checked again when you place the order.</p>
+    </aside>
+  </div>
+</div>
+<div id="sxFooter"></div>
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/checkout.js"></script>
+</body>
+</html>

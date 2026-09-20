@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPORTX — Online Sports Store</title>
+  <meta name="description" content="Cricket, football, badminton, basketball, fitness, running and tennis gear delivered across India.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/assets/categories/cricket.svg">
+</head>
+<body>
+
+<div id="sxHeader"></div>
+
+<!-- ============ HERO ============ -->
+<section class="sx-hero">
+  <div class="sx-container">
+    <div class="sx-hero-inner">
+      <div>
+        <span class="sx-hero-eyebrow">Free delivery on orders over ₹999</span>
+        <h1>Gear Up. Play Better.</h1>
+        <p>Bats, boots, rackets and weights chosen for people who actually play —
+           seven sports, one store, delivered to your door.</p>
+        <div class="sx-hero-actions">
+          <a class="sx-btn sx-btn-primary" href="/shop">Shop now</a>
+          <a class="sx-btn sx-btn-outline" href="#featured"
+             style="color:#fff;border-color:rgba(255,255,255,.3)">Explore products</a>
+        </div>
+        <div class="sx-hero-stats">
+          <div><strong id="statProducts">—</strong><span>Products in stock</span></div>
+          <div><strong>7</strong><span>Sports covered</span></div>
+          <div><strong>4.5★</strong><span>Average rating</span></div>
+        </div>
+      </div>
+      <div class="sx-hero-art">
+        <img src="/assets/products/cricket-bat.svg" alt="Cricket bat">
+        <img src="/assets/products/running-shoes.svg" alt="Running shoes">
+        <img src="/assets/products/basketball.svg" alt="Basketball">
+        <img src="/assets/products/badminton-racket.svg" alt="Badminton racket">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="sx-section" id="categories">
+  <div class="sx-container">
+    <div class="sx-section-head">
+      <div>
+        <h2>Shop by sport</h2>
+        <p>Pick your game and see everything we stock for it.</p>
+      </div>
+      <a class="sx-btn sx-btn-ghost sx-btn-sm" href="/shop">View all products</a>
+    </div>
+    <div class="sx-grid sx-grid-4" id="categoryGrid"></div>
+  </div>
+</section>
+
+<!-- ============ FEATURED ============ -->
+<section class="sx-section" id="featured" style="background:#fff">
+  <div class="sx-container">
+    <div class="sx-section-head">
+      <div>
+        <h2>Featured this week</h2>
+        <p>Hand-picked kit our customers keep coming back for.</p>
+      </div>
+      <a class="sx-btn sx-btn-ghost sx-btn-sm" href="/shop">See more</a>
+    </div>
+    <div class="sx-grid sx-grid-4" id="featuredGrid"></div>
+  </div>
+</section>
+
+<!-- ============ BEST SELLERS ============ -->
+<section class="sx-section">
+  <div class="sx-container">
+    <div class="sx-section-head">
+      <div>
+        <h2>Best sellers</h2>
+        <p>The gear that leaves the warehouse fastest.</p>
+      </div>
+    </div>
+    <div class="sx-grid sx-grid-4" id="bestGrid"></div>
+  </div>
+</section>
+
+<!-- ============ NEW ARRIVALS ============ -->
+<section class="sx-section" style="background:#fff">
+  <div class="sx-container">
+    <div class="sx-section-head">
+      <div>
+        <h2>New arrivals</h2>
+        <p>Just landed in the SPORTX warehouse.</p>
+      </div>
+    </div>
+    <div class="sx-grid sx-grid-4" id="newGrid"></div>
+  </div>
+</section>
+
+<!-- ============ OFFERS ============ -->
+<section class="sx-section">
+  <div class="sx-container">
+    <div class="sx-section-head"><div><h2>Special offers</h2>
+      <p>Apply these codes at checkout.</p></div></div>
+    <div class="sx-grid sx-grid-3" id="offerGrid">
+      <div class="sx-panel">
+        <h3>SPORTX10</h3>
+        <p class="sx-muted">10% off any order over ₹999. Works on every category.</p>
+        <a class="sx-btn sx-btn-outline sx-btn-sm" href="/shop">Start shopping</a>
+      </div>
+      <div class="sx-panel">
+        <h3>PLAY20</h3>
+        <p class="sx-muted">20% off when you spend ₹2,999 or more — best for a full kit refresh.</p>
+        <a class="sx-btn sx-btn-outline sx-btn-sm" href="/shop?sort=priceDesc">Browse premium gear</a>
+      </div>
+      <div class="sx-panel">
+        <h3>NEW5</h3>
+        <p class="sx-muted">5% off your first order over ₹499. New customers only.</p>
+        <a class="sx-btn sx-btn-outline sx-btn-sm" href="/register">Create an account</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="sx-section" style="background:#fff">
+  <div class="sx-container">
+    <div class="sx-section-head"><div><h2>What customers say</h2>
+      <p>Reviews from verified SPORTX orders.</p></div></div>
+    <div class="sx-grid sx-grid-3">
+      <div class="sx-review">
+        <div class="sx-review-head">
+          <div class="sx-avatar">R</div>
+          <div><strong>Rahul Mehta</strong><div class="sx-stars">★★★★★</div></div>
+        </div>
+        <p class="sx-muted">Ordered the willow bat on Tuesday, playing with it by Thursday.
+           Pickup is excellent and it needed only a light knock-in.</p>
+      </div>
+      <div class="sx-review">
+        <div class="sx-review-head">
+          <div class="sx-avatar">A</div>
+          <div><strong>Ananya Sharma</strong><div class="sx-stars">★★★★☆</div></div>
+        </div>
+        <p class="sx-muted">The running shoes fit true to size and the return process was
+           painless when I needed a half size up.</p>
+      </div>
+      <div class="sx-review">
+        <div class="sx-review-head">
+          <div class="sx-avatar">K</div>
+          <div><strong>Karan Patel</strong><div class="sx-stars">★★★★★</div></div>
+        </div>
+        <p class="sx-muted">Built my whole home gym here. The dumbbell set arrived well packed
+           and the plates sit tight on the collars.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="sx-section">
+  <div class="sx-container">
+    <div class="sx-newsletter">
+      <div>
+        <h2>Get restock alerts and offers</h2>
+        <p>One email a week. Match-day deals, new arrivals, nothing else.</p>
+      </div>
+      <form id="newsletterForm">
+        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+        <button class="sx-btn sx-btn-primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="sxFooter"></div>
+
+<script src="/js/api.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/home.js"></script>
+</body>
+</html>
